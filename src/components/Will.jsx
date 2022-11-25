@@ -11,7 +11,7 @@ function Will() {
       <div className="customCard container border bg-light rounded p-5 col-10">
         <div className="justify-content-between align-items-center">
           <p>
-            I <span className="fw-bolder">{nameAndDate.fullname.toUpperCase()}</span>being of sound mind,
+            I <span className="fw-bolder">{nameAndDate.fullname.toUpperCase()}</span> being of sound mind,
             publish and declare this to be my last will on this day{" "}
             <span className="fw-bolder">{nameAndDate.date}</span>
           </p>
