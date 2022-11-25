@@ -10,7 +10,7 @@ function Header() {
       <h1 className="text-center mt-3 mb-3">Will Generator</h1>
       <center>
         <div className="headerCard text-center col-2 p-2">
-          <h3 className="text-danger">Make a will</h3>
+          <h3 className="text-danger will">Make a will</h3>
         </div>
       </center>
       </div>
