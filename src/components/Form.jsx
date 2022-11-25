@@ -53,6 +53,8 @@ function Form() {
             <center>
               <div className="d-flex col-10 mt-3">
                 <input
+                required
+                autoFocus
                 value={data}
                   onChange={(e) => handleChange(e, i)}
                   className="col-10 col-md-10 form-control"
@@ -77,6 +79,7 @@ function Form() {
             <center>
               <div className=" d-flex col-10 mt-3">
                 <input
+                autoFocus
                 value={data}
                   onChange={(e) => handleChangePosessions(e, i)}
                   className="col-8 col-md-10  form-control"
