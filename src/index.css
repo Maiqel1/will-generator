@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+.formCard{
+
+height: 100%;
+background: rgba(195, 201, 252, 0.1);
+border: 1px solid #E7E7EB;
+border-radius: 15px;
+}
+
+.headerCard{
+  box-sizing: border-box;
+  /* width: fit-content;  */
+background: #FFFFFF;
+border: 1px solid #AAAAAA;
 }
