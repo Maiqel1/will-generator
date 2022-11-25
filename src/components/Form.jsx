@@ -44,18 +44,18 @@ function Form() {
       {/* BENEFICIARIES INPUT */}
 
       <div className="justify-content-center mt-3">
-            <div className="d-flex justify-content-between container col-10">
+            <div className="d-flex justify-content-between container p-0 col-10">
             <label htmlFor="beneficiaries">Beneficiaries</label>
-            <button onClick={() => handleAddBeneficiaries()}>+</button>
+            <button className="btn btn-danger" onClick={() => handleAddBeneficiaries()}>+</button>
             </div>
         {beneficiaries.map((data, i) => {
           return (
             <center>
-              <div className="d-flex col-10 mt-3">
+              <div className="d-flex col-10 mt-3 pr-5" style={{paddingRight: '3rem', paddingLeft: '0rem'}}>
                 <input
                 value={data}
                   onChange={(e) => handleChange(e, i)}
-                  className="col-10 col-md-10 form-control"
+                  className="col-10 col-md-12 form-control"
                 />
                 <button className="btn btn-danger btn-sm close mt-1 ms-3" onClick={() => handleDeleteBeneficiary(i)}> x</button>
               </div>
@@ -68,14 +68,14 @@ function Form() {
 
         <div>
         <div className="justify-content-center mt-4">
-            <div className="d-flex justify-content-between container col-10">
+            <div className="d-flex justify-content-between container p-0 col-10">
             <label htmlFor="Posessions">Posessions</label>
-            <button onClick={() => handleAddPosessions()}>+</button>
+            <button className="btn-danger btn" onClick={() => handleAddPosessions()}>+</button>
             </div>
         {posessions.map((data, i) => {
           return (
             <center>
-              <div className=" d-flex col-10 mt-3">
+              <div className=" d-flex col-10 mt-3 pr-5" style={{paddingRight: '3rem', paddingLeft: '0rem'}}>
                 <input
                 value={data}
                   onChange={(e) => handleChangePosessions(e, i)}

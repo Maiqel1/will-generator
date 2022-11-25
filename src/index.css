@@ -12,7 +12,9 @@ code {
     monospace;
 } */
 
-
+body {
+  color: #AAAAAA !important;
+}
 .formCard{
 
 height: 100%;
@@ -23,11 +25,37 @@ border-radius: 15px;
 
 .headerCard{
   box-sizing: border-box;
-  /* width: fit-content;  */
+background: #FFFFFF;
+border: 1px solid #AAAAAA;
+width: 237px;
+height: 55px;
+
 background: #FFFFFF;
 border: 1px solid #AAAAAA;
 }
-
+h3 {
+  color: #6f6d6d !important;
+}
 .close{
   height:100%;
 }
+
+.bg-bene {
+ min-width: 232px;
+height: 36px;
+background: #F5F3FF;
+border-radius: 4px;
+}
+.list-style-none {
+  list-style-type: none;
+  padding: 0;
+}
+.bg-gr {
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+color: #AAAAAA;
+}
+
