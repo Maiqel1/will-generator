@@ -49,7 +49,7 @@ function Form() {
       <div className="justify-content-center mt-3">
             <div className="d-flex justify-content-between container p-0 col-10">
             <label htmlFor="beneficiaries">Beneficiaries</label>
-            <button className="" onClick={() => handleAddBeneficiaries()}>+</button>
+            <button className="btn btn-danger" onClick={() => handleAddBeneficiaries()}>+</button>
             </div>
         {beneficiaries.map((data, i) => {
           return (
@@ -75,7 +75,7 @@ function Form() {
         <div className="justify-content-center mt-4">
             <div className="d-flex justify-content-between container p-0 col-10">
             <label htmlFor="Posessions">Posessions</label>
-            <button className="" onClick={() => handleAddPosessions()}>+</button>
+            <button className="btn btn-danger" onClick={() => handleAddPosessions()}>+</button>
             </div>
         {posessions.map((data, i) => {
           return (
@@ -96,7 +96,7 @@ function Form() {
       </div>
         </div>
         <div className="justify-content-center d-flex mt-5">
-        <button className="btn col-10 btn-danger"  type="submit">View Will</button>
+        <button className="btn col-10 btn-danger"  type="submit">Generate Will</button>
         </div>
         </form>
 
