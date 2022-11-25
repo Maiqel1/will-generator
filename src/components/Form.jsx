@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import WillContext from "../context/WillContext";
 
 function Form() {
-    const { beneficiaries, posessions, handleChangePosessions,handleAddPosessions, handleAddBeneficiaries, handleChange, handleNameAndDateChange, nameAndDate } =
+    const { beneficiaries, posessions, handleChangePosessions,handleAddPosessions, handleAddBeneficiaries, handleChange, handleNameAndDateChange, nameAndDate, handleDeleteBeneficiary, handleDeletePosession } =
     useContext(WillContext);
 
   const navigate = useNavigate();
@@ -51,12 +51,13 @@ function Form() {
         {beneficiaries.map((data, i) => {
           return (
             <center>
-              <div className="col-10">
+              <div className="d-flex col-10 mt-3">
                 <input
+                value={data}
                   onChange={(e) => handleChange(e, i)}
-                  className="col-10 col-md-10 mt-3 form-control"
+                  className="col-10 col-md-10 form-control"
                 />
-                {/* <button>x</button> */}
+                <button className="btn btn-danger btn-sm close mt-1 ms-3" onClick={() => handleDeleteBeneficiary(i)}> x</button>
               </div>
             </center>
           );
@@ -74,12 +75,13 @@ function Form() {
         {posessions.map((data, i) => {
           return (
             <center>
-              <div className="col-10">
+              <div className=" d-flex col-10 mt-3">
                 <input
+                value={data}
                   onChange={(e) => handleChangePosessions(e, i)}
-                  className="col-10 col-md-10 mt-3  form-control"
+                  className="col-8 col-md-10  form-control"
                 />
-                {/* <button>x</button> */}
+                <button className="btn btn-danger btn-sm close mt-1 ms-3" onClick={() => handleDeletePosession(i)}>x</button>
               </div>
             </center>
           );

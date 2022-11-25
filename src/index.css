@@ -27,3 +27,7 @@ border-radius: 15px;
 background: #FFFFFF;
 border: 1px solid #AAAAAA;
 }
+
+.close{
+  height:100%;
+}

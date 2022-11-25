@@ -44,6 +44,20 @@ export const WillProvider = ({children}) => {
         })
     }
 
+    const handleDeleteBeneficiary = (i) => {
+        const deleteBeneficiary =[...beneficiaries]
+        deleteBeneficiary.splice(i, 1)
+        setBeneficiaries(deleteBeneficiary)
+
+    }
+
+    const handleDeletePosession = (i) => {
+        const deletePosession =[...posessions]
+        deletePosession.splice(i, 1)
+        setPosessions(deletePosession)
+
+    }
+
 
     return <WillContext.Provider value={{
         beneficiaries,
@@ -53,6 +67,8 @@ export const WillProvider = ({children}) => {
         handleChangePosessions,
         handleNameAndDateChange,
         handleAddPosessions,
+        handleDeleteBeneficiary,
+        handleDeletePosession,
         nameAndDate
     }}>
         {children}
