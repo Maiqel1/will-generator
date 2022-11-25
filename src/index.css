@@ -13,7 +13,10 @@ code {
 } */
 
 body {
-  color: #AAAAAA !important;
+  color: #323131 !important;
+}
+.list-style-type-none {
+  list-style-type: none;
 }
 .formCard{
 /* width: 100%;
@@ -42,7 +45,7 @@ h3 {
 
 .bg-bene {
  min-width: 232px;
-height: 36px;
+min-height: 36px;
 background: #F5F3FF;
 border-radius: 4px;
 }
