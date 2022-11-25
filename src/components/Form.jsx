@@ -3,14 +3,16 @@ import { useNavigate } from "react-router-dom";
 import WillContext from "../context/WillContext";
 
 function Form() {
-
     const { beneficiaries, posessions, handleChangePosessions,handleAddPosessions, handleAddBeneficiaries, handleChange, handleNameAndDateChange, nameAndDate } =
     useContext(WillContext);
+
   const navigate = useNavigate();
 
   return (
     <div className="formCard col-8 mx-auto p-4 mt-4">
+
         <div className="justify-content-center d-flex">
+      {/* NAME FIELD */}
         <div className="col-10">
           <label htmlFor="fullname">FullName</label>
           <br />
@@ -24,6 +26,8 @@ function Form() {
         </div>
       </div>
 
+      {/* DATE FIELD */}
+
       <div className="d-flex justify-content-center mt-3">
         <div className="col-10">
           <label htmlFor="date">Date:</label> <br />
@@ -36,6 +40,8 @@ function Form() {
           />
         </div>
       </div>
+
+      {/* BENEFICIARIES INPUT */}
 
       <div className="justify-content-center mt-3">
             <div className="d-flex justify-content-between container col-10">
@@ -57,6 +63,8 @@ function Form() {
         })}
       </div>
 
+      {/* POSESSIONS INPUT*/}
+
         <div>
         <div className="justify-content-center mt-4">
             <div className="d-flex justify-content-between container col-10">
@@ -76,7 +84,6 @@ function Form() {
             </center>
           );
         })}
-        {/* <button onClick={() => navigate("/submit")}>View Will</button> */}
       </div>
         </div>
         <div className="justify-content-center d-flex mt-5">
