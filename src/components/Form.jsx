@@ -3,16 +3,14 @@ import { useNavigate } from "react-router-dom";
 import WillContext from "../context/WillContext";
 
 function Form() {
-    const { beneficiaries, posessions, handleChangePosessions,handleAddPosessions, handleAddBeneficiaries, handleChange, handleNameAndDateChange, nameAndDate, handleDeleteBeneficiary, handleDeletePosession } =
-    useContext(WillContext);
 
+    const { beneficiaries, posessions, handleChangePosessions,handleAddPosessions, handleAddBeneficiaries, handleChange, handleNameAndDateChange, nameAndDate } =
+    useContext(WillContext);
   const navigate = useNavigate();
 
   return (
     <div className="formCard col-8 mx-auto p-4 mt-4">
-
         <div className="justify-content-center d-flex">
-      {/* NAME FIELD */}
         <div className="col-10">
           <label htmlFor="fullname">FullName</label>
           <br />
@@ -25,8 +23,6 @@ function Form() {
           />
         </div>
       </div>
-
-      {/* DATE FIELD */}
 
       <div className="d-flex justify-content-center mt-3">
         <div className="col-10">
@@ -41,8 +37,6 @@ function Form() {
         </div>
       </div>
 
-      {/* BENEFICIARIES INPUT */}
-
       <div className="justify-content-center mt-3">
             <div className="d-flex justify-content-between container col-10">
             <label htmlFor="beneficiaries">Beneficiaries</label>
@@ -51,20 +45,17 @@ function Form() {
         {beneficiaries.map((data, i) => {
           return (
             <center>
-              <div className="d-flex col-10 mt-3">
+              <div className="col-10">
                 <input
-                value={data}
                   onChange={(e) => handleChange(e, i)}
-                  className="col-10 col-md-10 form-control"
+                  className="col-10 col-md-10 mt-3 form-control"
                 />
-                <button className="btn btn-danger btn-sm close mt-1 ms-3" onClick={() => handleDeleteBeneficiary(i)}> x</button>
+                {/* <button>x</button> */}
               </div>
             </center>
           );
         })}
       </div>
-
-      {/* POSESSIONS INPUT*/}
 
         <div>
         <div className="justify-content-center mt-4">
@@ -75,17 +66,17 @@ function Form() {
         {posessions.map((data, i) => {
           return (
             <center>
-              <div className=" d-flex col-10 mt-3">
+              <div className="col-10">
                 <input
-                value={data}
                   onChange={(e) => handleChangePosessions(e, i)}
-                  className="col-8 col-md-10  form-control"
+                  className="col-10 col-md-10 mt-3  form-control"
                 />
-                <button className="btn btn-danger btn-sm close mt-1 ms-3" onClick={() => handleDeletePosession(i)}>x</button>
+                {/* <button>x</button> */}
               </div>
             </center>
           );
         })}
+        {/* <button onClick={() => navigate("/submit")}>View Will</button> */}
       </div>
         </div>
         <div className="justify-content-center d-flex mt-5">

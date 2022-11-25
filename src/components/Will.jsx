@@ -9,18 +9,14 @@ function Will() {
     <>
         <h1 className="text-center">YOUR WILL</h1>
 
-    <div className="customCard container bg-light p-5">
-        <h2>{nameAndDate.fullname}</h2>
-        <p>{nameAndDate.date}</p>
-
-      {beneficiaries.map((beneficiary) => {
-        return (
-          <ul>
-            <li>{beneficiary}</li>
-          </ul>
-        );
-      })}
-
+    <div className="customCard container border bg-light rounded p-5">
+        <div className="d-flex justify-content-between align-items-center">
+        <h2 className="m-0">{nameAndDate.fullname}</h2>
+        <p className="m-0">{nameAndDate.date}</p>
+        </div>
+<div>
+  <h3>Summarry</h3>
+  
       <div className="mt-3">
       {posessions.map((posession) => {
         return (
@@ -30,6 +26,21 @@ function Will() {
         );
       })}
       </div>
+</div>
+    <div>
+      <h3>Beneficiaries</h3>
+      <div>
+      {beneficiaries.map((beneficiary) => {
+        return (
+          <ul>
+            <li>{beneficiary}</li>
+          </ul>
+        );
+      })}
+      </div>
+    </div>
+
+      
     </div>
     </>
   );
