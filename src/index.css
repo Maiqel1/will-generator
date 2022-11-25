@@ -16,8 +16,8 @@ body {
   color: #AAAAAA !important;
 }
 .formCard{
-
-height: 100%;
+/* width: 100%;
+height: 100%; */
 background: rgba(195, 201, 252, 0.1);
 border: 1px solid #E7E7EB;
 border-radius: 15px;
