@@ -30,7 +30,7 @@ function Will() {
             </ul>
           </div>
           <h5>The Beneficiaries of this will  are:</h5>
-          <ul className="bg-bene d-flex gap-2 list-style-type-none p-3">
+          <ul className="bg-bene d-flex flex-wrap gap-2 list-style-type-none p-4">
            {beneficiaries.map((beneficiary) => {
               if (beneficiary > 1) {
                 return <li className="px-0">{beneficiary}</li>;

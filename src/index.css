@@ -44,8 +44,8 @@ h3 {
 }
 
 .bg-bene {
- min-width: 232px;
-min-height: 36px;
+ width: fit-content;
+ height: 100%;
 background: #F5F3FF;
 border-radius: 4px;
 }
