@@ -43,7 +43,7 @@ function Will() {
         <div className="text-end py-5">Signature: ________________</div>
       </div>
       <div className=" container mt-3 text-end col-10">
-        <button className="btn btn-danger px-4" onClick={() => {
+        <button className="btn btn-danger px-4 mb-5" onClick={() => {
           window.print()
           return false;
         }} >Print Will</button>

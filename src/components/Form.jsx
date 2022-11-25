@@ -9,7 +9,7 @@ function Form() {
   const navigate = useNavigate();
 
   return (
-    <div className="formCard col-8 mx-auto p-4 mt-4">
+    <div className="formCard col-8 mx-auto p-4 mt-4 mb-5">
       <form onSubmit={() => navigate("/will")}>
 
         <div className="justify-content-center d-flex">
