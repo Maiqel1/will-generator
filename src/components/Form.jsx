@@ -10,6 +10,7 @@ function Form() {
 
   return (
     <div className="formCard col-8 mx-auto p-4 mt-4">
+      <form onSubmit={() => navigate("/will")}>
 
         <div className="justify-content-center d-flex">
       {/* NAME FIELD */}
@@ -17,6 +18,7 @@ function Form() {
           <label htmlFor="fullname">FullName</label>
           <br />
           <input
+            required
             className="form-control"
             type="text"
             value={nameAndDate.fullname}
@@ -32,6 +34,7 @@ function Form() {
         <div className="col-10">
           <label htmlFor="date">Date:</label> <br />
           <input
+            required
             className="form-control"
             type="date"
             value={nameAndDate.date}
@@ -79,6 +82,7 @@ function Form() {
             <center>
               <div className=" d-flex col-10 mt-3 pr-5" style={{paddingRight: '3rem', paddingLeft: '0rem'}}>
                 <input
+                required
                 autoFocus
                 value={data}
                   onChange={(e) => handleChangePosessions(e, i)}
@@ -92,8 +96,9 @@ function Form() {
       </div>
         </div>
         <div className="justify-content-center d-flex mt-5">
-        <button className="btn col-10 btn-danger" onClick={() => navigate("/will")}>View Will</button>
+        <button className="btn col-10 btn-danger"  type="submit">View Will</button>
         </div>
+        </form>
 
     </div>
   )
